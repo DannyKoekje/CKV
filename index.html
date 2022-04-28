@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Eternal Sunshine</title>
+    <style>
+body { 
+    background-image: url("Recourses/Start/nog.png"); 
+	background-size: cover ;
+	background-repeat: no-repeat;
+}
+        
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.Active) {
+  background-color: #111;
+}
+.Active {
+    background-color: #008cba;
+}
+        
+a.Alola:hover, a.Alola:active   {color: #04aa6d;}
+a.Recensie:hover, a.Recensie:active {color: #f78c00;}
+a.Acteur:hover, a.Acteur:active {color: #e55846;}
+a.Momenten:hover, a.Momenten:active{color:#64bcd2;}
+
+.datum {
+    padding:13px;
+    margin:1%;
+    width:100%;
+    color:white;
+}   
+    </style>
+</head>
+<body>
+  <ul style="font-family:courier"; >
+  <li style="float:right";><a class="Active">Home</a></li>
+  <li><a class="Recensie" href="Recensie.html">Recensie</a></li>
+  <li><a class="Acteur" href="Acteur.html">Acteurs/Actrices</a></li>
+  <li><a class="Momenten" href="Momenten.html">Leuke momenten</a></li>
+  <li style="float:right"><p class="datum" id="datum"></p></li>
+</ul>   
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<p style="margin:25px;float:right">Gemaakt door: <b>Daniël Sikkema</b></p>
+<script>
+const d = new Date();
+let text = d.toLocaleDateString();
+document.getElementById("datum").innerHTML = text;
+</script>
+</body>
+<html>
